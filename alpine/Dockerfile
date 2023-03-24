@@ -171,6 +171,6 @@ RUN mkdir -p ${TEMPLATES_DIR} && \
     ln -s /.pandoc /root/.pandoc
 
 # eisvogel
-ARG EISVOGEL_REPO=https://raw.githubusercontent.com/Wandmalfarbe/pandoc-latex-template
-ARG EISVOGEL_VERSION=v2.1.0
+ARG EISVOGEL_REPO=https://raw.githubusercontent.com/jason-warner/pandoc-latex-template
+ARG EISVOGEL_VERSION=test
 RUN wget ${EISVOGEL_REPO}/${EISVOGEL_VERSION}/eisvogel.tex -O ${TEMPLATES_DIR}/eisvogel.latex
